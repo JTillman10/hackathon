@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='app'>
+  <head>
+    <title ng-bind="titleTag">Home</title>
+    <meta name='viewport' content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes'>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-app="app">
+   
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" ui-sref="landing">Hackathon</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li class="main"><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="auto">Auto</a></li>
+  </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+  </div>
+    <!--inject:js -->
+    <!--endinject -->
+  </body>
+</html>
