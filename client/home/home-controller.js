@@ -1,47 +1,13 @@
 'use strict';
 
-function HomeCtrl($stateParams, $state, $filter, $log) {
+function HomeCtrl($stateParams, $state, $filter, $log, $rootScope) {
 	var vm = this;
+    vm.showTiles = true;
 
-    vm.tiles = [
-        {
-            name: 'Air Conditioner',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Stove',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Oven',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Washer',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Dryer',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Refrigerator',
-            img: '',
-            link: ''
-        },
-        {
-            name: 'Furnace',
-            img: '',
-            link: ''
-        }
-    ];
+    vm.tiles = $rootScope.appliances;
+    console.log("HOME TILES: " + vm.tiles);
 }
 
-HomeCtrl.$inject = ['$stateParams', '$state', '$filter', '$log'];
+HomeCtrl.$inject = ['$stateParams', '$state', '$filter', '$log', '$rootScope'];
 
 export default HomeCtrl;

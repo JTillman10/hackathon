@@ -90,7 +90,7 @@ gulp.task('build-dependencies', ['clean'], function () {
 
 gulp.task('build-app',[
     'clean', 'stage', 'landing-templates',
-    'home-templates', 'auto-templates'
+    'home-templates', 'auto-templates', 'profile-templates'
   ], function () {
 
   // set up the browserify instance on a task basis
@@ -194,6 +194,13 @@ gulp.task('auto-templates', ['clean'], generateTemplate(
   'auto/',
   'auto.ngTemplates',
   config.stageDir + '/auto/templates'
+));
+
+gulp.task('profile-templates', ['clean'], generateTemplate(
+  config.appDir + '/profile/**/*.tpl.html',
+  'profile/',
+  'profile.ngTemplates',
+  config.stageDir + '/profile/templates'
 ));
 
 gulp.task('build', ['build-dependencies', 'build-app', 'html', 'styles', 'vendorStyles', 'appFonts', 'inject', 'images', 'vendorFonts'], function () {

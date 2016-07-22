@@ -9,24 +9,20 @@
     <!-- inject:css -->
     <!-- endinject -->
   </head>
-  <body ng-app="app">
+  <body ng-app="app" style="background-color: MidnightBlue">
    
-  <!-- NAVIGATION -->
-  <nav class="navbar navbar-inverse" role="navigation">
-  <div class="navbar-header">
-    <a class="navbar-brand" ui-sref="landing">Hackathon</a>
-  </div>
-  <ul class="nav navbar-nav">
-    <li class="main"><a ui-sref="home">Home</a></li>
-    <li><a ui-sref="auto">Auto</a></li>
-  </ul>
-  </nav>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="landing">Hackathon</a>
+    </div>
+    </nav>
 
-  <!-- MAIN CONTENT -->
-  <div class="container">
-    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-    <div ui-view></div>
-  </div>
+    <!-- MAIN CONTENT -->
+    <div class="container" style="background-color: white; height: 100%">
+      <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+      <div ui-view></div>
+    </div>
     <!--inject:js -->
     <!--endinject -->
   </body>

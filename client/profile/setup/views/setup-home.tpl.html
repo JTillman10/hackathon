@@ -1,0 +1,12 @@
+<div class="page-header">What Do You Want To Manage?</div>
+<section class="section container-fluid" style="background-color: white; padding-top: 15px">
+    <div class="container" style="width: 1000px">
+        <div class="row">
+            <div class="col-lg-12">
+                <span ng-repeat="tile in setup.manageTiles">
+                    <profile-tile name="tile.name" state="tile.state" class="tile"></profile-tile>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>

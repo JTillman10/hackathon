@@ -1,0 +1,24 @@
+<div class="page-header-small">Appliances Found!</div>
+<section class="section container-fluid" style="background-color: white; padding-top: 15px">
+    <div class="container" style="width: 1000px">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <tbody>
+                        <tr class="col-lg-6">
+                            <div ng-repeat="appliance in scan.appliances" class="tile">
+                                <span style="font-size: 36px">{{appliance.name}}</span>
+                                <span style="">
+                                    <a class="btn btn-sq-xs btn-danger pull-right">
+                                        <span>X</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- submit -->
+            </div>
+        </div>
+    </div>
+</section>

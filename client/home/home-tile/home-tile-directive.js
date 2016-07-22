@@ -4,9 +4,12 @@ function homeTile() {
   return {
     scope: {},
     bindToController: {
-      name: '='
+      name: '=',
+      image: '=',
+      score: '=',
+      status: '='
     },
-    restrict: 'EA',
+    restrict: 'E',
     templateUrl: 'home/home-tile/home-tile.tpl.html',
     controller: 'homeTileCtrl',
     controllerAs: 'homeTile',

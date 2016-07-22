@@ -16,6 +16,7 @@ import 'angular-cookies';
 import ngTemplates from './templates/home.ngTemplates';
 import homeCtrl from './home-controller';
 import homeTile from './home-tile/home-tile-module';
+import appliance from './appliance/appliance-module';
 
 import homeService from './services/home-service';
 
@@ -26,7 +27,8 @@ angular.module('home', [
   'ngCookies',
   'ui.bootstrap',
   ngTemplates.name,
-  homeTile.name
+  homeTile.name,
+  appliance.name
 ])
 .service('HomeService', homeService)
 .controller('HomeCtrl', homeCtrl);

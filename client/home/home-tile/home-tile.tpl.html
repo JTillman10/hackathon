@@ -1,4 +1,7 @@
-<a href="#" class="btn btn-sq-lg btn-primary">
-    <!--<i class="fa fa-user fa-5x"></i><br/>-->
-   {{homeTile.name}}
+<a ui-sref="home.appliance({name: homeTile.name})" class="btn btn-sq-lg btn-primary">
+    <img src="{{homeTile.image}}"></img><br/>
+    <span>{{homeTile.name}}</span>
 </a>
+<span style="width:300px; display:inline !important;">
+    <uib-progressbar animate="false" value="homeTile.score" type="{{homeTile.color}}""><b>{{homeTile.score}}%</b></uib-progressbar>
+</span>

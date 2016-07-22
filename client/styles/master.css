@@ -11,8 +11,9 @@
 }
 
 .btn-sq-lg {
-  width: 150px !important;
-  height: 150px !important;
+  width: 300px !important;
+  height: 300px !important;
+  margin: 5px;
 }
 
 .btn-sq {
@@ -31,4 +32,34 @@
   width: 25px !important;
   height: 25px !important;
   padding:2px;
+}
+
+.page-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+}
+
+.page-header-small {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 65px;
+}
+
+.container {
+  height: 100%;
+}
+
+.tile {
+  text-align: center;
 }
