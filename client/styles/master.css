@@ -236,3 +236,7 @@
          -o-transform: rotate(-.50turn);
             transform: rotate(-.50turn);
 } 
+
+.landing-tile {
+  text-align: center;
+}

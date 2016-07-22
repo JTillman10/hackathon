@@ -8,12 +8,12 @@ function SetupCtrl($stateParams, $state, $filter, $log) {
         {
             name: 'Scan',
             state: 'scan',
-            image: 'image/Scanner.png'
+            image: 'images/Scanner.png'
         },
         {
             name: 'Manually Select',
             state: 'select',
-            image: 'image/Wrench.png'
+            image: 'images/Wrench.png'
         }
     ];
 }

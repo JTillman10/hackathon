@@ -68,11 +68,11 @@ angular.module('app', [
             ],
             services: [
               {
-                service: 'Service B',
+                service: 'Change circuit',
                 date: 'August 4, 2016'
               },
               {
-                service: 'Service A',
+                service: 'Clean drains',
                 date: 'January 29, 2009'
               }
             ]
