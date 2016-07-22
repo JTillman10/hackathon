@@ -8,15 +8,15 @@ function ProfileCtrl($stateParams, $state, $filter, $log) {
    vm.profTiles = [
         {
             name: 'Notifications',
-            image: 'images/TriangleAlert.png'
+            image: 'images/Message.png'
         },
         {
             name: 'Personal Info',
-            image: ''
+            image: 'images/user.png'
         },
         {
             name: 'Set Up Home',
-            image: '',
+            image: 'images/House.png',
             state: 'setup'
         }
     ];

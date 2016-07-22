@@ -7,11 +7,13 @@ function SetupCtrl($stateParams, $state, $filter, $log) {
      vm.manageTiles = [
         {
             name: 'Scan',
-            state: 'scan'
+            state: 'scan',
+            image: 'image/Scanner.png'
         },
         {
             name: 'Manually Select',
-            state: 'select'
+            state: 'select',
+            image: 'image/Wrench.png'
         }
     ];
 }

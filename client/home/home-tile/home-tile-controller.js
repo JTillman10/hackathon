@@ -8,7 +8,7 @@ function HomeTileCtrl($stateParams, $state, $filter, $log) {
     } else if (vm.score < 66) {
 		vm.color = 'warning';
     } else {
-		vm.color = 'primary';
+		vm.color = 'info';
     }
 
 }

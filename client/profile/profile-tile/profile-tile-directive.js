@@ -5,6 +5,7 @@ function profileTile() {
     scope: {},
     bindToController: {
       name: '=',
+      image: '=',
       state: '='
     },
     restrict: 'E',

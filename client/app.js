@@ -51,19 +51,19 @@ angular.module('app', [
             details: [
               {
                 contributor: 'Machine age (10 years)',
-                reccomendation: 'Consider replacement'
+                recommendation: 'Consider replacement'
               },
               {
                 contributor: 'Supply hose failure',
-                reccomendation: 'Replace with steel braided hose'
+                recommendation: 'Replace with steel braided hose'
               },
               {
                 contributor: 'Overflow/backups',
-                reccomendation: 'Clean drains'
+                recommendation: 'Clean drains'
               },      
               {
                 contributor: 'Fire hazard',
-                reccomendation: 'Properly ground appliance'
+                recommendation: 'Properly ground appliance'
               }
             ],
             services: [
@@ -79,12 +79,12 @@ angular.module('app', [
         },
          {
             name: 'Dryer',
-            img: 'images/Stove.png',
+            img: 'images/Washer.png',
             score: 46
         },
         {
             name: 'Secruity',
-            img: 'images/SecuritySystem.png',
+            img: 'images/Lock.png',
             score: 70
         },
         {
@@ -94,7 +94,7 @@ angular.module('app', [
         },
         {
             name: 'Fire Alarm',
-            img: 'images/Stove.png',
+            img: 'images/Fire.png',
             score: 40
         }
     ];

@@ -5,7 +5,6 @@ function HomeCtrl($stateParams, $state, $filter, $log, $rootScope) {
     vm.showTiles = true;
 
     vm.tiles = $rootScope.appliances;
-    console.log("HOME TILES: " + vm.tiles);
 }
 
 HomeCtrl.$inject = ['$stateParams', '$state', '$filter', '$log', '$rootScope'];
